@@ -48,7 +48,7 @@ class Myapp extends StatelessWidget {
               borderRadius: BorderRadius.circular(40),
               //White Continer
               child: Container(
-                color: Colors.white,
+                color: const Color.fromARGB(255, 0, 0, 0),
                 height: 440,
                 width: 333,
                 //Column inside the white Container
