@@ -14,6 +14,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: (context, child) => MaterialApp(
+        theme: ThemeData(primarySwatch: Colors.pink),
         home: Scaffold(
           //Background Container color
           body: Container(
@@ -51,7 +52,7 @@ class Myapp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                   //White Continer
                   child: Container(
-                    color: const Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     height: 440,
                     width: 333,
                     //Column inside the white Container
@@ -59,9 +60,12 @@ class Myapp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'What is Your need?',
+                          'What is Your need',
                           style: GoogleFonts.inter(
                               fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 30,
                         ),
 
                         //Container Buttons

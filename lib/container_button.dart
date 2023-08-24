@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:multiple_calculators/age/age_calcultor.dart';
 
 //BMI Container button
 class ContainerButton1 extends StatelessWidget {
@@ -30,7 +31,7 @@ class ContainerButton1 extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'BMI Calculator',
+                      'bSMI Calculator',
                       style: GoogleFonts.inter(
                           color: Colors.white,
                           fontSize: 15,
@@ -89,7 +90,10 @@ class ContainerButton2 extends StatelessWidget {
         width: 250,
         height: 90,
         child: OutlinedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: ((context) => AgeCal())));
+            },
             style: OutlinedButton.styleFrom(
                 side: const BorderSide(
                     width: 0.0001, color: Color.fromARGB(255, 255, 255, 255))),
