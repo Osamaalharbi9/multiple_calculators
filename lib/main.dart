@@ -52,7 +52,7 @@ class Myapp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                   //White Continer
                   child: Container(
-                    color: Color.fromARGB(255, 255, 255, 255),
+                    color: const Color.fromARGB(255, 255, 255, 255),
                     height: 440,
                     width: 333,
                     //Column inside the white Container
@@ -64,8 +64,8 @@ class Myapp extends StatelessWidget {
                           style: GoogleFonts.inter(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
-                          height: 30,
+                        const SizedBox(
+                          height: 20,
                         ),
 
                         //Container Buttons
@@ -77,7 +77,10 @@ class Myapp extends StatelessWidget {
                         const SizedBox(
                           height: 30,
                         ),
-                        const ContainerButton3()
+                        const ContainerButton3(),
+                        const SizedBox(
+                          height: 20,
+                        )
                       ],
                     ),
                   ),
