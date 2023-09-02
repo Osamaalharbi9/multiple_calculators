@@ -96,7 +96,10 @@ class _AgeCalState extends State<AgeCal> {
                                 side: const BorderSide(
                                     width: 0.0001,
                                     color: Color.fromARGB(255, 255, 255, 255))),
-                            child: Text('First date'),
+                            child: const Text(
+                              'First date',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
@@ -137,7 +140,8 @@ class _AgeCalState extends State<AgeCal> {
                                       width: 0.0001,
                                       color:
                                           Color.fromARGB(255, 255, 255, 255))),
-                              child: Text('Second date'),
+                              child: const Text('Second date',
+                                  style: TextStyle(color: Colors.white)),
                             ),
                           ),
                         ),
